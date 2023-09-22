@@ -4,7 +4,7 @@
     "cpus": 4
   },
   "waitFor": "onCreateCommand",
-  "updateContentCommand": "pip install -r requirements.txt",
+  "updateContentCommand": "sudo apt update && sudo apt upgrade -y && sudo apt install -y ffmpeg && pip install -r requirements.txt",
   "postCreateCommand": "",
   "postAttachCommand": {
     "server": "flask --debug run"
@@ -23,7 +23,10 @@
     },
     "vscode": {
       "extensions": [
-        "ms-python.python"
+        "ms-python.python",
+        "ms-python.isort",
+        "github.copilot",
+        "github.copilot-chat"
       ]
     }
   },

@@ -1,1 +1,11 @@
 Flask==2.3.2
+flask-swagger-ui
+flask-restx
+apispec
+webargs
+eyed3
+pydub
+pyradio
+python-mpd2
+mutagen
+apispec-webframeworks
